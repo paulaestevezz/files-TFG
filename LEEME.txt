@@ -1,0 +1,50 @@
+#########################################################
+##Scripts de Matlab empleados en la fase de Pre-ensayo:##
+#########################################################
+a) Para la elaboración del track: 
+
+-aplicarGanancia.m: función para aplicar una determinada ganancia respecto al archivo wav original generando un nuevo wav.
+
+-Ganancia_Edit.m: script que llama a la función aplicarGanancia.m con una ganancia.
+
+-ComprobacionGanancia.m: script para comprobar el nivel tras aplicar la ganancia.
+
+b)Para la caracterización acústica del tanque: 
+
+-ProcesadoGrabacionesTanque.m: script que procesa todas las grabaciones para hacer los cálculos 
+y representaciones (SPL, colormaps) necesarias para la caracterización acústica del tanque. 
+Este, hace uso de los siguientes scripts que se mencionan en este apartado.
+
+-Recortar_WAV.m: función que recorta el audio a la duración deseada en segundos.
+
+-wav2SPL.m: función que convierte los valores de un archivo WAV a SPL en bandas de tercio de octava.
+
+-SPL_medio.m: función que calcula el SPL medio de los 9 puntos para cada frecuencia en bandas de tercio de octava 
+de una combinación altavoz y plano de experimentación determinada,
+
+-Var_i.m: función que calcula la varianza del SPL de un punto para cada frecuencia en tercios de octava.
+
+-Ind_Var_comb.m: función que calcula la variabilidad para una combinación de fuente y plano de experimentación dada.
+
+-Var_ecualizacion.m: función que calcula la diferencia entre el SPL medio en bandas de tercio de octava
+de la combinación respecto al valor promedio de la combinación.
+
+####################################################################################
+##Scripts de Matlab empleados para el procesamiento de las grabaciones del ensayo:##
+####################################################################################
+-CalculoSPL_GlobalTramos.m: script para el cálculo y la representación del SPL de las grabaciones cada 10 s.
+
+-CalculoSPL_Escalon.m: script para el cálculo y la representación del SPL de las grabaciones por escalón de 298.2 s.
+
+-wav2SPL_Global.m: función que calcula el SPL de una grabación por escalones, cada 298.2 s.
+
+-wav2SPL_Global_Steps.m: función que calcula el SPL de una grabación cada 10 s.
+
+#####################################################################################
+##Scripts de Matlab para la obtención y representación de los datos de valvometría:##
+#####################################################################################
+-Extraccion_DatosValvometria.m: script para la extracción y manipulación de los datos de valvometría.
+
+-Representacion_DatosValvometria.m: script para la representación de los datos de valvometría.
+
+-IndicadoresReaccion_Valvometria.m: script para el cálculo y representación de los indicadores de reacción.
