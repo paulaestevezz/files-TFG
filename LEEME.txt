@@ -26,7 +26,7 @@ de una combinación altavoz y plano de experimentación determinada,
 
 -Ind_Var_comb.m: función que calcula la variabilidad para una combinación de fuente y plano de experimentación dada.
 
--Var_ecualizacion.m: función que calcula la diferencia entre el SPL medio en bandas de tercio de octava
+-Var_ecualizacion.m: función que calcula la diferencia entre el SPL medio en bandas de tercios de octava
 de la combinación elegida y su valor promedio.
 
 ####################################################################################
